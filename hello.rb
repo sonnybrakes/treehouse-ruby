@@ -1,10 +1,7 @@
 name = 'mitch'
-puts "hello #{name}"
-puts ("hello #{name}")
-puts %Q|hello #{name}|
-string = <<-string
+string = <<-foo
 hello
-my name is mitch
+my name is #{name}
 how about those jays"
-string
+foo
 puts string
