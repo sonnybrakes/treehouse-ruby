@@ -1,3 +1,2 @@
-print "enter your name: "
-name = gets
+name = 'mitch'
 puts "hello #{name}"
