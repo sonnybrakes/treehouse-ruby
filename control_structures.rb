@@ -1,12 +1,18 @@
-car1_speed = 500
-car2_speed = 300
+print "enter name: "
+name = gets.chomp
 
-if car1_speed > car2_speed
-  puts "Car 1 is faster than Car 2"
+if name == "mitch"
+  puts "that's my name"
+else
+  puts "hi #{name}"
 end
 
-car2_speed += 300
+print "would you like to see your name backwards? yes or no? "
+answer = gets.chomp.downcase
 
-if car2_speed > car1_speed
-  puts "Car 2 is faster than Car 1"
+if answer == "yes"
+  puts "this is your name backwards: "
+  puts name.reverse
+else
+  puts "ok, maybe later"
 end
