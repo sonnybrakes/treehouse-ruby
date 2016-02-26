@@ -10,14 +10,15 @@ end
 print "modify your name. type 'uppercase' or 'reverse': "
 answer = gets.chomp.downcase
 
-if answer == "reverse"
-  puts "this is your name backwards: "
-  puts name.reverse
-elsif answer == "uppercase"
-  puts "this is your name in uppercase letters:"
-  puts name.upcase
-elsif answer == "both"
-  puts name.upcase.reverse
-else
-  puts "ok, maybe later"
-end
+case answer
+  when "reverse"
+    puts "this is your name backwards: "
+    puts name.reverse
+  when "uppercase"
+    puts "this is your name in uppercase letters:"
+    puts name.upcase
+  when "both"
+    puts name.upcase.reverse
+  else
+    puts "ok, maybe later"
+  end
